@@ -1,0 +1,544 @@
+/* comon section */
+* {
+    outline: none;
+}
+
+body {
+    background: white;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header section */
+#headerSec {
+    position: relative;
+}
+
+#headerSec .col-12 .headerHed {
+    height: 15px;
+    background: linear-gradient(to right, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%)
+}
+
+.headerHed1 {
+    background: rgba(128, 128, 128, 0.199);
+    height: 50px;
+}
+
+#headerSec .headerHed1 .col-12 p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.headerSec-img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+#headerSec .headerSec-nav {
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding-left: 50px
+}
+
+#headerSec .headerSec-nav ul li {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    padding: 15px
+}
+
+#headerSec .headerSec-nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-bottom: 15px
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(1) .headernav {
+    top: 50px;
+    background: #393939;
+    width: 0px;
+    height: 0px;
+    border-radius: 10px;
+    display: none;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(1) a:hover+.headernav {
+    display: block;
+    top: 50px;
+    width: 250px;
+    height: 150px;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(1) .headernav:hover {
+    display: block;
+    top: 50px;
+    width: 250px;
+    height: 150px;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(1) .headernav li {
+    display: inline
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(1) .headernav li a {
+    display: inline-block;
+    padding: 15px 5px;
+    font-size: 17px;
+    color: white
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2 {
+    width: 600px;
+    height: 350px;
+    display: none;
+    background: #393939;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2 ul {
+    display: inline-block;
+    width: calc(95%/2)
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2 ul li {
+    display: inline;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2 ul li h1 {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2 ul li a {
+    display: inline-block;
+    padding: 10px;
+    color: white
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) a:hover+.headernav2 {
+    display: block;
+    top: 50px;
+    z-index: 20;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2:hover {
+    display: block;
+    top: 50px;
+    z-index: 20;
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(2) .headernav2 ul li a:hover {
+    color: #ffc90a;
+    transform: scale(0.8)
+}
+
+#headerSec .headerSec-nav ul li:nth-of-type(1) .headernav li a:hover {
+    color: #ffc90a;
+    transform: scale(0.8)
+}
+
+#headerSec .headerSec-search {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#headerSec .headerSec-search a {
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    width: 40px;
+    height: 38px;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: right;
+    overflow: hidden
+}
+
+#headerSec .headerSec-search input {
+    position: absolute;
+    left: 226px;
+    top: 30px;
+    width: 0px;
+    height: 0px;
+    background: rgba(128, 128, 128, 0.13);
+    border-radius: 20px;
+    text-align: right;
+    border: 2px solid transparent;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 1s;
+}
+
+#headerSec .headerSec-search a i {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+    padding-top: 10px
+}
+
+#headerSec .headerSec-search a:hover+input {
+    visibility: visible;
+    transform: scale(1.1);
+    width: 200px;
+    height: 45px;
+    left: 56px;
+    top: 9px;
+    z-index: 10;
+}
+
+#headerSec .headerSec-search input:hover {
+    visibility: visible;
+    transform: scale(1.1);
+    width: 200px;
+    height: 45px;
+    background: rgb(209, 207, 207);
+    box-shadow: 5px 3px 3px rgba(255, 255, 0, 0.137);
+    left: 56px;
+    top: 8px;
+}
+#headerSec .headerSec-search input:focus {
+    visibility: visible;
+    transform: scale(1.1);
+    width: 200px;
+    height: 45px;
+    background: rgb(209, 207, 207);
+    box-shadow: 5px 3px 3px rgba(255, 255, 0, 0.137);
+    left: 56px;
+    top: 8px;
+}
+
+#headerSec .headerSec-search a i:hover {
+    color: #ffc90a;
+}
+
+#headerSec .headerSec1-search button {
+    margin-top: 40px;
+    float: right;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #0086cd;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize
+}
+
+#headerSec .headTransition {
+    margin: 40px 0px;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.233)
+}
+
+#headerSec .col-12 .headTransition1 a,
+b {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.555);
+    font-weight: bold;
+    font-size: 13px;
+    padding: 20px 5px;
+    text-transform: capitalize
+}
+
+#headerSec .col-12 .headTransition1 a:nth-of-type(3) {
+    color: #0086cd
+}
+
+/* info section  */
+#infoSec {
+    height: 850px;
+}
+
+#infoSec .col-3 .infoscrol {
+    width: 90%;
+    background: rgb(250, 246, 246);
+    box-shadow: 2px 2px 2px silver;
+    border-radius: 10px;
+}
+
+#infoSec .col-3 {
+    top: 0%;
+    z-index: 1000;
+}
+
+#infoSec .col-3 .infoscrol ul li {
+    padding: 25px
+}
+
+#infoSec .col-3 .infoscrol ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+#infoSec .col-3 .infoscrol ul li a:hover {
+    text-decoration: underline;
+    color: #1a1816
+}
+
+#infoSec .col-6 div {
+    width: 90%;
+}
+
+#infoSec .col-6 div:nth-of-type(1) {
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+#infoSec .col-6 div h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+#infoSec .col-6 div b {
+    color: gray;
+    font-size: 15px;
+    text-transform: unset;
+    line-height: 0.7cm;
+    font-weight: 100;
+}
+
+#infoSec .col-3 .infoSec-cont {
+    width: 90%;
+    height: 600px;
+    background: rgb(250, 246, 246);
+    box-shadow: 2px 2px 2px silver;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#infoSec .col-3 .infoSec-cont p {
+    margin: 20px 0px;
+    color: gray
+}
+
+#infoSec .col-3 .infoSec-cont i {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: gray
+}
+
+#infoSec .col-3 .infoSec-cont div div {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-bottom: 20px
+}
+
+#infoSec .col-3 .infoSec-cont h1 {
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#infoSec .col-3 .infoSec-cont h3 {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize
+}
+
+#infoSec .col-3 .infoSec-cont b {
+    font-size: 13px;
+    word-spacing: 0.1cm;
+    line-height: 0.6cm;
+    text-transform: unset
+}
+
+#infoSec .col-3 .infoSec-cont ul {
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 21px);
+}
+
+#infoSec .col-3 .infoSec-cont ul li {
+    display: inline-block;
+    padding-top: 20px
+}
+
+#infoSec .col-3 .infoSec-cont ul li a i {
+    font-size: 15px;
+    color: gray;
+}
+
+#infoSec .col-3 .infoSec-cont .line1 {
+    width: 60px;
+    height: 10px;
+    background: linear-gradient(to right, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
+    top: 85%;
+    left: 15%;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+#infoSec .col-3 .infoSec-cont .line2 {
+    width: 60px;
+    height: 10px;
+    background: linear-gradient(to right, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
+    top: 65%;
+    left: 5%;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+#infoSec .col-3 .infoSec-cont .line3 {
+    width: 60px;
+    height: 10px;
+    background: linear-gradient(to right, #00a65a 0%, #0086cd 16%, #873996 37%, #ec3824 62%, #f0812b 82%, #ffc90a 100%);
+    top: 50%;
+    right: 35%;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+#infoSec .col-3 .infoSec-cont div div img {
+    position: relative;
+    z-index: 5;
+}
+
+/* user section */
+#userSec {
+    height: 400px;
+    background: url(img/student.png);
+    background-size: cover;
+}
+
+#userSec .userHed {
+    padding-top: 30px;
+    margin-top: 30PX;
+}
+
+#userSec .userHed p {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+#userSec .userHed p span {
+    color: #ec3824
+}
+
+#userSec .col-12 .userLog {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    background: rgb(236, 235, 235);
+    position: absolute;
+    left: calc(50% - 300px);
+    margin-top: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#userSec .col-12 .userLog div {
+    display: inline-block;
+    width: calc(95%/2);
+    /* background: blue; */
+    height: calc(95%/2);
+    margin: 5px;
+}
+
+#userSec .col-12 .userLog div input {
+    width: 90%;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid silver;
+    background: transparent;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.507)
+}
+
+#userSec .col-12 .userLog div button {
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    background: #0086cd;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* footer section  */
+#footerSec .col-2 .footer-col,
+.col-3 .footer-col {
+    width: 95%;
+    height: 400px;
+    padding-top: 20px
+}
+
+#footerSec .col-2 .footer-col ul li,
+.col-3 .footer-col ul li {
+    display: block;
+    margin: 25px;
+    font-size: 17px;
+}
+
+#footerSec .col-2 .footer-col ul li h1,
+.col-3 .footer-col ul li h1 {
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+#footerSec .col-2 .footer-col ul li a,
+.col-3 .footer-col ul li a {
+    text-decoration: none;
+    color: #393939;
+    transition: 1s;
+}
+
+#footerSec .col-2 .footer-col ul li a:hover,
+.col-3 .footer-col ul li a:hover {
+    border-bottom: 1px solid silver;
+}
+
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(7) a {
+    border: none;
+}
+
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(7) a i {
+    color: red;
+    font-size: 20px;
+    padding-right: 30px;
+    transition: 0.3s;
+}
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(7) a i:hover{
+    color: #ffc90a;
+}
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(4) a{
+   border: none;
+   transition: 1s;
+}
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(4){
+    border: 1px solid red;
+    width: 180px;
+    height: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 1s;
+}
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(4):hover{
+    background: red
+}
+#footerSec .col-3:last-child .footer-col ul li:nth-of-type(4) a:hover{
+    color: white;
+}
